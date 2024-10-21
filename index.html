@@ -1,13 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TonyDev182 Web developer.</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TonyDev182 Web Developer</title>
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Estructura principal de la página -->
+  <header style="text-align: center; margin-bottom: 2rem;">
+    <nav>
+      <ul>
+        <li style="font-weight: bold; font-family: serif;">Home</li>
+        <li style="font-weight: bold; font-family: serif;">Projects</li>
+        <li style="font-weight: bold; font-family: serif;">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <div class="circle">
+      <img src="/src/assets/yo.jpeg" alt="Antonio" />
+    </div>
+    <h5>Antonio Atienza Cano</h5>
+    <p class="descripcion">
+      Hello, I'm ToniDev182, a few years ago I started this adventure as
+      a developer, inspired by my curiosity and my developer friends, I
+      continue every day trying to learn as much as I can.
+    </p>
+    <br>
+    <ul class="learning">
+      <li>Java</li>
+      <li>Javascript</li>
+      <li>HTML</li>
+      <li>Css</li>
+      <li>Sql/Psm</li>
+      <li>Php</li>
+      <li>React</li>
+    </ul>
+  </aside>
+
+  <h1 class="devway">Follow your Dew Way</h1>
+
+  <aside class="sidebar2">
+    <table class="table">
+      <tr>
+        <td>
+          <div class="content">
+            <iframe class="video-section" src="https://www.youtube.com/embed/_02p28tPaVg?start=1281"
+              title="Programming music"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+        </td>
+        <td>
+          <h3>A little reflection</h3>
+          <p class="reflection-section">
+            Throughout my life, I have worked in many things, I have worked the land, I have worked in
+            factories, I have worked in marketing companies, supermarkets, restaurants, and I have never
+            felt truly fulfilled until now...
+          </p>
+        </td>
+      </tr>
+    </table>
+  </aside>
+
+  <div class="card">
+    <button id="bro-count-button">"Bro Counts" <span id="count-value">0</span></button>
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/de.la_sierra_/" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/icons8-instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/icons8-facebook.svg" alt="Facebook" />
+    </a>
+    <a href="https://www.linkedin.com/in/antonio-atienza-cano-3813a7211/" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/icons8-linkedin.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/ToniDev182" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/icons8-github.svg" alt="GitHub" />
+    </a>
+    <a href="mailto:atienzajobs16@gmail.com" target="_blank" rel="noopener noreferrer">
+      <img src="/src/assets/reshot-icon-mail-LA745PGQTF.svg" alt="Correo" />
+    </a>
+
+    <p class="read-the-docs">Hi! I'm TonyDev182</p>
+  </footer>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
