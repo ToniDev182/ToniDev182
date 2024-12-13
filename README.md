@@ -10,13 +10,12 @@ Through this profile, I want to share my projects and show you my approach to co
 
 ### Technologies I work with
 
-- 💾 **SQL Databases**: Design, management, and optimization of relational databases, working with tables, complex queries, and normalization.
+- 💾 **SQL Databases**: Design, management, and optimization of relational databases, working with tables, queries, and normalization.
 - 🌐 **JavaScript**: Development of dynamic and interactive web applications, event handling, and AJAX to enhance user experience.
 - ☕ **Java**: Object-oriented programming, development of desktop and backend applications, data structures, and algorithms.
 - 🖥️ **PHP**: Server-side development, creating robust web applications, integrating databases, and building RESTful APIs.
 - 🌍 **HTML**: Semantic structuring of web pages, ensuring accessibility and SEO.
 - 🎨 **CSS**: Visual design of attractive interfaces, flexible layout with Flexbox and Grid, as well as animations to enhance user experience.
-- 💻 **Web Application Deployment**: Using deployment tools like **Heroku**, **Netlify**, **Vercel**, and Apache/Nginx servers.
 - 🖥️ **Operating Systems**: Knowledge of system administration in **Ubuntu** and **Windows**, including managing permissions, users, and disk quotas in Linux environments.
 
 ### Tools I use
