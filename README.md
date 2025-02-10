@@ -14,7 +14,7 @@ Through this profile, I want to share my projects and show you my approach to co
 - 🌐 **JavaScript**: Development of dynamic and interactive web applications, event handling, and AJAX to enhance user experience.
 - ☕ **Java**: Object-oriented programming, development of desktop and backend applications, data structures, and algorithms.
 - 🖥️ **PHP**: Server-side development, creating robust web applications, integrating databases, and building RESTful APIs.
-- 🌍 **HTML**: Semantic structuring of web pages, ensuring accessibility and SEO.
+- 🌍 **HTML**: Semantic structuring of web pages.
 - 🎨 **CSS**: Visual design of attractive interfaces, flexible layout with Flexbox and Grid, as well as animations to enhance user experience.
 - 🖥️ **Operating Systems**: Knowledge of system administration in **Ubuntu** and **Windows**, including managing permissions, users, and disk quotas in Linux environments.
 
