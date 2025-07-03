@@ -27,10 +27,9 @@ const techIcons = {
   elementor: "https://i.postimg.cc/cH3BnTZR/ElementorLogo.png",
 };
 
-const backgroundVideoUrl = "https://cdn.pixabay.com/video/2022/08/16/08/56/technology-7396.mp4";
-
 function Cards() {
   const { t } = useLanguage();
+  const [hoverIndex, setHoverIndex] = useState(null);
 
   const cards = [
     {
@@ -38,19 +37,7 @@ function Cards() {
       text: "FRAILES FIT",
       url: "https://www.frailesfit.com/",
       tech: [
-        "html",
-        "css",
-        "gulp",
-        "sass",
-        "javascript",
-        "nodejs",
-        "express",
-        "bootstrap",
-        "dynamoDB",
-        "amplify",
-        "ec2",
-        "route53",
-        "github",
+        "html", "css", "gulp", "sass", "javascript", "nodejs", "express", "bootstrap", "dynamoDB", "amplify", "ec2", "route53", "github"
       ],
     },
     {
@@ -58,13 +45,7 @@ function Cards() {
       text: "Masa Critica Granada",
       url: "https://www.masacriticagrx.com/",
       tech: [
-        "react",
-        "html",
-        "css",
-        "nodejs",
-        "amplify",
-        "route53",
-        "github",
+        "react", "html", "css", "nodejs", "amplify", "route53", "github"
       ],
     },
     {
@@ -72,14 +53,7 @@ function Cards() {
       text: "Black Mesa Collective",
       url: "https://blackmesacollective.com/",
       tech: [
-        "react",
-        "html",
-        "css",
-        "nodejs",
-        "amplify",
-        "route53",
-        "github",
-        "tailwind",
+        "react", "html", "css", "nodejs", "amplify", "route53", "github", "tailwind"
       ],
     },
     {
@@ -87,13 +61,10 @@ function Cards() {
       text: "UGT Granada",
       url: "https://www.ugtserviciospublicosgranada.org/",
       tech: [
-        "wordpress",
-        "elementor",
+        "wordpress", "elementor"
       ],
     },
   ];
-
-  const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
     <div className="h-auto pt-20 flex flex-col items-center justify-center text-white">
@@ -122,14 +93,6 @@ function Cards() {
             onMouseLeave={() => setHoverIndex(null)}
           >
             <div className="card-dj relative bg-black text-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-              <video
-                className="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none"
-                src={backgroundVideoUrl}
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
               <img
                 src={card.img}
                 alt={`Slide ${i}`}

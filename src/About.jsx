@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "./context/LanguageContext";
+import "./styles/animaciones.css";
 
 function About() {
   const { t } = useLanguage();
@@ -7,7 +8,7 @@ function About() {
   return (
     <section className="max-w-7xl mx-auto px-6 gap-4 py-16 grid mt-5 grid-cols-1 lg:grid-cols-2 lg:gap-30 items-center justify-center md:items-center md:justify-center relative rounded-2xl lg:shadow-lg">
       {/* Contenedor de la imagen */}
-      <div className="relative rounded-2xl overflow-visible flex justify-center md:mb-8">
+      <div className="relative rounded-2xl overflow-visible flex justify-center md:mb-8 animate-slide-top">
         <img
           src="https://i.postimg.cc/63xt01rY/CODING.png"
           alt="Coding Illustration"
@@ -17,7 +18,7 @@ function About() {
       </div>
 
       {/* Contenedor de texto con superposición sutil */}
-      <div className="relative bg-white rounded-2xl p-8 shadow-lg md:mx-auto -translate-x-0 lg:-translate-x-16 max-w-xl">
+      <div className="relative bg-white rounded-2xl p-8 shadow-lg md:mx-auto -translate-x-0 lg:-translate-x-16 max-w-xl animate-zoom-in delay-500">
         <h2 className="text-3xl font-extrabold mb-4 leading-tight text-gray-900 text-center md:text-left">
           {t("title")}<br />{t("subtitle")}
         </h2>

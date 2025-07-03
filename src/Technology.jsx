@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "./context/LanguageContext";
+import "./styles/animaciones.css"; // Importación de animaciones
 
 const techData = {
   languages: [
@@ -52,10 +53,11 @@ function TechCategory({ titleKey, items }) {
         {t(titleKey)}
       </h3>
       <div className="flex flex-wrap gap-6 justify-center">
-        {items.map(({ name, img }) => (
+        {items.map(({ name, img }, index) => (
           <div
             key={name}
-            className="flex flex-col items-center text-center w-20 md:w-24"
+            className="flex flex-col items-center text-center w-20 md:w-24 animate-zoom-in"
+            style={{ animationDelay: `${index * 0.1}s` }} // Delay escalonado
           >
             <img
               src={img}

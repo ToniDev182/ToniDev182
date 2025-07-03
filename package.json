@@ -1,44 +1,44 @@
 {
  "name": "toni-dev182",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.10",
-    "lucide-react": "^0.522.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "swiper": "^11.2.8",
-    "tailwindcss": "^4.1.10"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.15",
-    "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.5.2",
-    "eslint": "^8.45.0",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^5.4.19"
-  },
-  "description": "Personal portfolio and website project for ToniDev182.",
-  "main": "vite.config.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ToniDev182/ToniDev182"
-  },
-  "keywords": [],
-  "author": "Antonio Atienza Cano",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ToniDev182/ToniDev182/issues"
-  },
-  "homepage": "https://github.com/ToniDev182/ToniDev182/blob/master/README.md"
+ "private": true,
+ "version": "0.0.0",
+ "type": "module",
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "vite preview"
+ },
+ "dependencies": {
+  "@tailwindcss/vite": "^4.1.10",
+  "lucide-react": "^0.522.0",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0",
+  "react-icons": "^4.10.1",
+  "swiper": "^11.2.8",
+  "tailwindcss": "^4.1.10"
+ },
+ "devDependencies": {
+  "@types/react": "^18.2.15",
+  "@types/react-dom": "^18.2.7",
+  "@vitejs/plugin-react": "^4.5.2",
+  "eslint": "^8.45.0",
+  "eslint-plugin-react": "^7.32.2",
+  "eslint-plugin-react-hooks": "^4.6.0",
+  "eslint-plugin-react-refresh": "^0.4.3",
+  "vite": "^5.4.19"
+ },
+ "description": "Personal portfolio and website project for ToniDev182.",
+ "main": "vite.config.js",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/ToniDev182/ToniDev182"
+ },
+ "keywords": [],
+ "author": "Antonio Atienza Cano",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/ToniDev182/ToniDev182/issues"
+ },
+ "homepage": "https://github.com/ToniDev182/ToniDev182/blob/master/README.md"
 }

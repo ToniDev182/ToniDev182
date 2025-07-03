@@ -1,6 +1,5 @@
 import Cards from "./Cards";
 import particles from "./assets/particles.mp4";
-import "./styles/body.css";
 import About from "./About";
 import Technology from "./Technology";
 
