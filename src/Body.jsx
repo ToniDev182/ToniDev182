@@ -2,6 +2,7 @@ import Cards from "./Cards";
 import particles from "./assets/particles.mp4";
 import "./styles/body.css";
 import About from "./About";
+import Technology from "./Technology";
 
 function Body() {
   return (
@@ -22,6 +23,7 @@ function Body() {
         <div className="relative z-10">
           <About />
           <Cards />
+          <Technology />
         </div>
       </div>
     </div>

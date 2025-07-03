@@ -8,6 +8,15 @@
   "bio": "Programador apasionado por el desarrollo de aplicaciones web. Bienvenido/a a mi página. Desde que comencé mi trayectoria en el mundo de la programación, he adquirido conocimientos valiosos en diversas áreas del desarrollo web y siempre estoy buscando nuevas formas de mejorar mis habilidades.",
   "closing": "A través de este perfil, quiero compartir mis proyectos y mostrar mi enfoque hacia la resolución de problemas.",
    "visit_website": "Visitar Web",
-  "cards-tittle": "Proyectos"
+  "cards-tittle": "Proyectos",
+  "techTitle": "Tecnologías & Herramientas",
+   "languages": "Lenguajes de Programación",
+  "frameworks": "Frameworks & Librerías",
+  "tools": "Herramientas",
+  "ides": "IDEs",
+  "os": "Sistemas Operativos",
+  "awsServices": "Servicios AWS y Backend",
+  "cms": "CMS",
+  "footerAllRights": "© Todos los derechos reservados."
   }
 
