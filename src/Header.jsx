@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "./context/LanguageContext";
 import "./styles/header.css";
+import "./styles/animaciones.css";
 
 const images = [
   "https://i.postimg.cc/1tF0YWkX/react-Banner.png",
@@ -55,12 +56,14 @@ function Header() {
             loading="lazy"
             draggable={false}
             className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              index === currentIndex
+                ? "opacity-100 z-10 animate-fade-in"
+                : "opacity-0 z-0"
             } select-none`}
           />
         ))}
 
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20 pointer-events-none"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20 pointer-events-none" />
 
         <div className="relative z-30 flex flex-col items-center justify-center h-full px-4 gap-4 lg:gap-40 lg:flex-row lg:justify-arround lg:px-12">
           <img
@@ -71,13 +74,13 @@ function Header() {
           />
 
           <div className="text-center select-none max-w-lg">
-            <h1 className="text-2xl lg:text-4xl font-bold leading-tight white-shadow headerH1">
+            <h1 className="text-2xl lg:text-4xl font-bold leading-tight white-shadow headerH1 animate-slide-left">
               🖥️ Antonio Atienza Cano
             </h1>
-            <p className="text-lg lg:text-2xl font-semibold leading-tight white-shadow headerp">
+            <p className="text-lg lg:text-2xl font-semibold leading-tight white-shadow headerp animate-slide-left delay-200">
               {t("role")}
             </p>
-            <p className="text-base lg:text-xl font-medium leading-tight white-shadow headerp2">
+            <p className="text-base lg:text-xl font-medium leading-tight white-shadow headerp2 animate-slide-left delay-400">
               {t("description")}
             </p>
           </div>
@@ -85,7 +88,7 @@ function Header() {
           <img
             src="https://i.postimg.cc/156rTPtc/Toni-Dev-Logo.png"
             alt="Logo Derecha"
-            className="select-none white-shadow w-20 h-auto lg:w-50 lg:mb-70"
+            className="select-none white-shadow w-20 h-auto lg:w-50 lg:mb-70 animate-zoom-in"
             draggable={false}
           />
         </div>
