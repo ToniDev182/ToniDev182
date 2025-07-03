@@ -1,3 +1,9 @@
+
+<p align="center">
+  <img src="https://i.postimg.cc/156rTPtc/Toni-Dev-Logo.png" alt="ToniDev!82  Logo" width="300"/>
+</p>
+
+
 # Hello, I'm Antonio Atienza Cano! 👨‍💻🚀
 
 ## Web Developer in Continuous Learning 📚
@@ -10,13 +16,22 @@ Through this profile, I want to share my projects and show you my approach to co
 
 ### Technologies I work with
 
-- 💾 **SQL Databases**: Design, management, and optimization of relational databases, working with tables, queries, and normalization.
-- 🌐 **JavaScript**: Development of dynamic and interactive web applications, event handling, and AJAX to enhance user experience.
-- ☕ **Java**: Object-oriented programming, development of desktop and backend applications, data structures, and algorithms.
-- 🖥️ **PHP**: Server-side development, creating robust web applications, integrating databases, and building RESTful APIs.
-- 🌍 **HTML**: Semantic structuring of web pages.
-- 🎨 **CSS**: Visual design of attractive interfaces, flexible layout with Flexbox and Grid, as well as animations to enhance user experience.
-- 🖥️ **Operating Systems**: Knowledge of system administration in **Ubuntu** and **Windows**, including managing permissions, users, and disk quotas in Linux environments.
+- 💾 **SQL Databases**: Design, management, and optimization of relational databases, working with tables, queries, and normalization.  
+- 🌐 **JavaScript**: Development of dynamic and interactive web applications, event handling, and AJAX to enhance user experience.  
+- ☕ **Java**: Object-oriented programming, development of desktop and backend applications, data structures, and algorithms.  
+- 🖥️ **PHP**: Server-side development, creating robust web applications, integrating databases, and building RESTful APIs.  
+- 🌍 **HTML**: Semantic structuring of web pages.  
+- 🎨 **CSS**: Visual design of attractive interfaces, flexible layout with Flexbox and Grid, as well as animations to enhance user experience.  
+- 🖥️ **Operating Systems**: Knowledge of system administration in **Ubuntu** and **Windows**, including managing permissions, users, and disk quotas in Linux environments.  
+
+- ☁️ **AWS**: Experience with Amplify, Route 53, EC2, and DynamoDB for cloud deployment, domain management, virtual servers, and NoSQL databases.  
+- ⚙️ **Express.js**: Backend web framework for Node.js, building RESTful APIs and server-side logic.  
+- 🎨 **Tailwind CSS**: Utility-first CSS framework for rapid UI development.  
+- 📐 **Bootstrap**: Responsive front-end framework for designing mobile-first websites.  
+- 🛠️ **Gulp**: Task automation tool for front-end workflows.  
+- 💅 **Sass**: CSS preprocessor for more efficient and maintainable stylesheets.  
+- ⚛️ **React**: JavaScript library for building dynamic user interfaces and single-page applications.
+
 
 ### Tools I use
 
@@ -75,7 +90,7 @@ Below is how I have organized my projects and tools as I have acquired new skill
 │   ├── 📂 PHP/
 │   │   ├── 📄 intro-php.md     # Introduction and best practices for PHP development
 │   │   ├── 📄 databases.md     # Working with MySQL databases in PHP
-│   │   └── 📄 api-development.md # Creating RESTful APIs in PHP
+│   │   └── 📄 api-development.md # Creating RESTful APIs in ExpressJS
 │   ├── 📂 JavaScript/
 │   │   ├── 📄 intro-js.md      # Introduction to JavaScript, DOM manipulation, and event handling
 │   │   ├── 📄 async-await.md   # Understanding async/await for asynchronous programming
