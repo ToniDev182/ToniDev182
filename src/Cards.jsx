@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow } from "swiper/modules";
 import "./styles/card-dj.css";
 import { useLanguage } from "./context/LanguageContext";
 
@@ -28,7 +27,6 @@ const techIcons = {
   elementor: "https://i.postimg.cc/cH3BnTZR/ElementorLogo.png",
 };
 
-// URL del video que quieres usar de fondo en las tarjetas (puedes cambiarlo)
 const backgroundVideoUrl = "https://cdn.pixabay.com/video/2022/08/16/08/56/technology-7396.mp4";
 
 function Cards() {
@@ -95,14 +93,11 @@ function Cards() {
     },
   ];
 
-  // Estado para hover, guarda índice activo
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div className="h-auto py-20 flex flex-col items-center justify-center text-white">
-    <h2 className="text-5xl text-black font-bold mb-8 santafe">{t("cards-tittle")}</h2>
-
-
+    <div className="h-auto pt-20 flex flex-col items-center justify-center text-white">
+      <h2 className="text-5xl text-black font-bold mb-8 santafe">{t("cards-tittle")}</h2>
       <Swiper
         effect="coverflow"
         grabCursor
@@ -116,8 +111,7 @@ function Cards() {
           modifier: 1.5,
           slideShadows: true,
         }}
-        pagination={{ clickable: true, el: ".swiper-pagination" }}
-        modules={[EffectCoverflow, Pagination]}
+        modules={[EffectCoverflow]}
         className="w-full"
       >
         {cards.map((card, i) => (
@@ -128,7 +122,6 @@ function Cards() {
             onMouseLeave={() => setHoverIndex(null)}
           >
             <div className="card-dj relative bg-black text-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-              {/* Video fondo */}
               <video
                 className="absolute top-0 left-0 w-full h-full object-cover opacity-10 pointer-events-none"
                 src={backgroundVideoUrl}
@@ -137,7 +130,6 @@ function Cards() {
                 muted
                 playsInline
               />
-              {/* Contenido encima del video */}
               <img
                 src={card.img}
                 alt={`Slide ${i}`}
@@ -149,8 +141,9 @@ function Cards() {
                   href={card.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`title-dj flex justify-center text-xl md:text-2xl lg:text-3xl mb-2 transition-transform duration-300 ${hoverIndex === i ? "scale-110" : "scale-100"
-                    }`}
+                  className={`title-dj flex justify-center text-xl md:text-2xl lg:text-3xl mb-2 transition-transform duration-300 ${
+                    hoverIndex === i ? "scale-110" : "scale-100"
+                  }`}
                 >
                   {hoverIndex === i ? t("visit_website") : card.text}
                 </a>
@@ -170,7 +163,6 @@ function Cards() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="swiper-pagination mt-4 !text-white"></div>
       </Swiper>
     </div>
   );

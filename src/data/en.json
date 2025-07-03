@@ -8,7 +8,16 @@
   "bio": "I'm a programmer passionate about web development. Welcome to my page. Since I started my journey in programming, I've gained valuable knowledge in various areas of web development and I'm always looking for ways to improve my skills.",
   "closing": "Through this profile, I want to share my projects and showcase my approach to problem-solving.",
   "visit_website": "Visit Website",
-  "cards-tittle": "Projects"
+  "cards-tittle": "Projects",
+   "techTitle": "Technologies & Tools",
+  "languages": "Programming Languages",
+  "frameworks": "Frameworks & Libraries",
+  "tools": "Tools",
+  "ides": "IDEs",
+  "os": "Operating Systems",
+  "awsServices": "AWS Services and Backend",
+  "cms": "CMS",
+    "footerAllRights": "© All rights reserved."
 }
   
 

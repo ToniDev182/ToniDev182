@@ -25,6 +25,9 @@ function About() {
           {t("intro")}
         </p>
         <h3 className="text-xl font-semibold mb-3 text-gray-900 text-center md:text-left">
+          atienzajobs16@gmail.com
+        </h3>
+        <h3 className="text-xl font-semibold mb-3 text-gray-900 text-center md:text-left">
           {t("greeting")}
         </h3>
         <p className="text-gray-700 mb-3 text-center md:text-left">
