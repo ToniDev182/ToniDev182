@@ -1,0 +1,121 @@
+.white-shadow {
+  filter:
+    drop-shadow(0 0 4px rgba(255, 255, 255, 0.3))
+    drop-shadow(0 0 8px rgba(255, 255, 255, 0.6))
+    drop-shadow(0 0 12px rgba(255, 255, 255, 0.8));
+}
+
+.textHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+  width: 90vw;
+  text-align: center;
+}
+
+.headerH1 {
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.headerp {
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.headerp2 {
+  letter-spacing: 0.04em;
+  font-size: 1.25rem;
+}
+
+.line-header {
+  height: 1px;
+  position: relative;
+  top: -1px;
+  box-shadow: 0 0 8px 1px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  .textHeader {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    max-width: 90vw;
+    width: 90vw;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .headerH1 {
+    font-size: 1.75rem;
+  }
+
+  .headerp {
+    font-size: 1.1rem;
+  }
+
+  .headerp2 {
+    font-size: 1rem;
+  }
+
+  .absolute.top-20.left-30 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100px !important;
+    margin-bottom: 1rem;
+  }
+
+  .absolute.top-4.right-30 {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 70px !important;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .textHeader {
+    max-width: 95vw;
+    width: 95vw;
+    padding: 0 0.5rem;
+  }
+
+  .headerH1 {
+    font-size: 1.3rem;
+  }
+
+  .headerp {
+    font-size: 0.9rem;
+  }
+
+  .headerp2 {
+    font-size: 0.8rem;
+  }
+
+  .absolute.top-20.left-30 {
+    width: 80px !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .absolute.top-4.right-30 {
+    width: 50px !important;
+    margin-top: 0.75rem;
+  }
+}

@@ -36,7 +36,7 @@ function Cards() {
   ];
 
   return (
-    <div className="h-auto py-20 flex items-center justify-center bg-black/60 text-white">
+    <div className="h-auto py-20 flex items-center justify-center text-white">
       <Swiper
         effect="coverflow"
         grabCursor
