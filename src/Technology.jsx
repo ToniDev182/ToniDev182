@@ -15,12 +15,14 @@ const techData = {
     { name: "React", img: "https://i.postimg.cc/cCMRdv4N/React-Logo.png" },
     { name: "Sass", img: "https://i.postimg.cc/RV41XLXC/SassLogo.png" },
     { name: "Tailwind CSS", img: "https://i.postimg.cc/CKBbzPL7/tailwindcss-Logo.png" },
+    { name: "Bootstrap", img: "https://i.postimg.cc/0jJYFVhr/Boots-Trap-Logo.png" }, // Añadido Bootstrap
   ],
   tools: [
     { name: "Gulp", img: "https://i.postimg.cc/FsyWKKnz/gulp-logo.png" },
     { name: "GitHub", img: "https://i.postimg.cc/Y2mDJR61/git-Hub-Logo.png" },
     { name: "Git", img: "https://i.postimg.cc/fbLB5fWS/gitLogo.png" },
     { name: "Figma", img: "https://i.postimg.cc/NMKCG7Wv/Figma-Logo.png" },
+    { name: "Node.js", img: "https://i.postimg.cc/kXmsLmXm/NodeLogo.png" }, // Añadido Node.js
   ],
   ides: [
     { name: "NetBeans", img: "https://i.postimg.cc/8Pm4S0jr/Net-Beans-Logo.png" },
