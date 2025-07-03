@@ -1,22 +1,4 @@
 {
-  "santaFe": "Desde Alcalá la Real, Santa Fe dispara sets de Drum and Bass y break techno con una intensidad cruda. Sonidos duros, sin filtros, directos al cuerpo.",
-  "sferenet": "Granada es su base, pero su sonido va más allá. Bass experimental y breaks se funden en sets mentales, densos y profundamente rítmicos.",
-  "rome": "Desde Málaga, Rome DJMash mezcla géneros con naturalidad. DnB, Dubstep, House y más: un flujo constante de energía, técnica y sorpresa.",
-   "eventos.title": "Eventos",
-  "eventos.inferno": "SALA INFERNO (JAÉN) -",
-  "eventos.proximamente": "PRÓXIMAMENTE...",
-    "gallery.title": "Galería",
-    "media.title": "Multimedia",
-  "media.description.part1": "BlackMesa Collective nace de la mano de",
-  "media.description.part2": "con el sencillo sueño de ver a sus amigos unidos por la música, como todos estos años atrás.",
-  "media.description.part3": "Poco a poco, este sueño se ha ido convirtiendo en un movimiento que une no solo a músicos, sino también a colegas que aportan lo que pueden: ya sea de forma presencial, económica o con sus conocimientos.",
-  "media.description.part4": "Esta sinergia ha atraído a técnicos de sonido como",
-  "media.description.part5": "y técnicos de luces como",
-  "media.description.part6": "que también pululan entre las sombras de BlackMesa, haciendo que todo esto sea posible.",
-  "footerAllRights": "Todos los derechos reservados ©",
-  "footerDescription": "Unidos por la música electrónica. Deep techno, house, breaks y drum and bass — pura energía y pasión underground.",
-  "footerInstagram": "Instagram",
-  "footerContactUs": "Contáctanos",
-  "footerVideoUnsupported": "Tu navegador no soporta el video.",
-  "footerLogoAlt": "Logo Black Mesa"
+  "role": "📱 Desarrollador Full Stack",
+  "description": "⌨️ Desarrollo de Aplicaciones Web"
 }
