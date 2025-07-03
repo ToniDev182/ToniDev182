@@ -21,23 +21,32 @@ function Footer() {
         {t("footerVideoUnsupported")}
       </video>
 
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-5"
+        style={{
+          backgroundImage: "url('https://i.postimg.cc/8z0nLVZ8/footerME.jpg')",
+          opacity: 1,
+        }}
+      />
+
       <div className="footer-background-image" />
 
-      {/* Removed red overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-10" />
+      {/* Overlay negro con opacidad 70% */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10" />
 
       <div className="relative z-30 h-full w-full px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="flex items-center gap-3">
+  <div className="flex flex-col mt-4 items-center gap-4 md:flex-row md:items-center">
+
           <img
             src="https://i.postimg.cc/156rTPtc/Toni-Dev-Logo.png"
             alt={t("footerLogoAlt")}
-            className="h-10 w-auto"
+            className="lg:h-50 h-20 w-auto white-shadow"
           />
-          <p className="text-sm md:text-base santafe">{t("footerAllRights")}</p>
+          <p className="text-lg md:text-xl santafe font-semibold">{t("footerAllRights")}</p>
         </div>
 
         <div className="text-center max-w-3xl px-4">
-          <h1 className="sferenet text-lg md:text-xl font-semibold drop-shadow-md">
+          <h1 className="sferenet text-xl md:text-2xl font-semibold drop-shadow-md">
             {t("footerSlogan")}
           </h1>
         </div>
@@ -59,7 +68,6 @@ function Footer() {
             className="cursor-pointer transition-transform duration-300 transform hover:scale-110 flex flex-col items-center"
             aria-label="Email"
           >
-            {/* Using a nice mail icon from lucide-react */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-9 w-9 text-white"
