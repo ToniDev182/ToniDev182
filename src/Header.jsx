@@ -1,71 +1,125 @@
-import React from "react";
-import clip from "../src/assets/fog1.mp4";
-import './styles/header.css'
+import React, { useState, useEffect } from "react";
 import { useLanguage } from "./context/LanguageContext";
+import "./styles/header.css"; // Assuming you have a CSS file for styles
+
+const images = [
+  "https://i.postimg.cc/1tF0YWkX/react-Banner.png",
+  "https://i.postimg.cc/mZQNY536/sass-banner.png",
+  "https://i.postimg.cc/T3PVX2zZ/SQLBanner.png",
+  "https://i.postimg.cc/YCy12Kkj/Tailwind-Banner.png",
+  "https://i.postimg.cc/nLyB74XJ/Ubuntu-Windows-Banner.png",
+  "https://i.postimg.cc/fWjmt0ZG/visual-studio-code-banner.png",
+  "https://i.postimg.cc/1td0vkCL/AWSBanner.png",
+  "https://i.postimg.cc/htC0JQ8D/PHPBanner.png",
+  "https://i.postimg.cc/NFw8h6t4/phpstorm-Banner.png",
+  "https://i.postimg.cc/26gc1LDb/Git-Hub-Banner.png",
+  "https://i.postimg.cc/28R9mWGg/gulp-banner.png",
+  "https://i.postimg.cc/NLq6c1wD/bootstrap-Banner.png",
+  "https://i.postimg.cc/0yv4GSJ7/css-Banner.png",
+  "https://i.postimg.cc/0NWHqHXC/figma-Banner.png",
+  "https://i.postimg.cc/tJPrWRqr/git-Banner.png",
+  "https://i.postimg.cc/05mZtQvn/nodejs-express-Banner.png",
+  "https://i.postimg.cc/y87f3zwP/HTML5-Banner.png",
+  "https://i.postimg.cc/ZqMjQv07/Java-Banner.png",
+  "https://i.postimg.cc/yxFPWfjt/Net-Beans-Banner.png",
+  "https://i.postimg.cc/PJGyXGW1/Java-Script-Banner.png",
+
+];
 
 function Header() {
-  const genres = ["TECHNO", "BASS HOUSE", "BREAKS", "DRUM AND BASS"];
-  const { t, language, setLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const toggleLanguage = () => {
     setLanguage(language === "es" ? "en" : "es");
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <header className="relative text-white h-screen overflow-hidden bg-black">
-      {/* Video de fondo */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src={clip} type="video/mp4" />
-        Tu navegador no soporta el video.
-      </video>
-
-      {/* Capa de color roja con mezcla */}
-      <div className="absolute top-0 left-0 w-full h-full bg-red-600 mix-blend-multiply opacity-100 z-10" />
-
-      {/* Botón de cambio de idioma */}
-<button
-  onClick={toggleLanguage}
-  className="lang-button fixed top-6 left-6 z-30 bg-black text-white px-3 py-1 rounded border-1 border-red-600"
-  aria-label="Toggle Language"
->
-  {language === "es" ? "EN" : "ES"}
-</button>
-
-      <img
-        src="https://i.postimg.cc/nLDVrdQS/Black-Mesa-Logo.png"
-        alt="Black Mesa Logo"
-        className="heartbeat absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-100 md:h-100 lg:w-175 lg:h-175 w-75 h-75 z-15 opacity-50"
+    <>
+      {/* Google Fonts Orbitron */}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet"
       />
+      <header className="relative text-white overflow-hidden bg-black h-[80vh] max-h-[500px] font-orbitron">
+        {/* Logo arriba a la izquierda */}
+        <img
+          src="https://i.postimg.cc/4yMPX89D/MELogo.png"
+          alt="Logo Izquierda"
+          className="absolute top-20 left-30 z-40 w-100 h-auto select-none white-shadow"
+          draggable={false}
+        />
 
-      {/* Contenido del header */}
-      <div className="relative z-20 w-full h-full flex flex-col justify-center items-center gap-20 px-6">
-        <h1 className="title font-bold text-5xl md:text-7xl lg:text-8xl flex text-center">BLACK MESA</h1>
+        {/* Contenedor de texto centrado vertical y horizontalmente */}
+        <div
+          className="absolute top-1/2 left-1/2 z-40 text-center select-none textHeader"
+        >
+          <h1
+            className="text-4xl font-bold leading-tight white-shadow headerH1"
+          >
+            🖥️ Antonio Atienza Cano
+          </h1>
+          <p
+            className="text-2xl font-semibold leading-tight white-shadow headerp"
 
-        <div className="subcontent flex flex-col gap-5">
-          <div className="nombres flex flex-row justify-center items-center gap-9 text-2xl md:text-4xl lg:text-6xl">
-            <h2 className="santafe flex text-center">SANTA FE</h2>
-            <h2 className="sferenet pb-2 md:pb-3 lg:pb-5 flex text-center">SFERENET</h2>
-            <h2 className="djsmash pb-1 md:pb-2 flex text-center">ROME DJMASH</h2>
-          </div>
-          {/* seccion de musica */}
-          <div className="musica flex flex-col md:flex-row gap-2 text-xl items-center md:justify-center md:text-2xl lg:text-3xl">
-            {genres.map((genre, index) => (
-              <h3 key={index}>
-                {genre}
-                {index !== genres.length - 1 && <span className="ps-2">/</span>}
-              </h3>
-            ))}
-          </div>
+          >
+            📱 Desarrollador Full Stack
+          </p>
+          <p
+            className="text-xl font-medium leading-tight white-shadow headerp2"
+
+          >
+            ⌨️ Desarrollo de Aplicaciones Web
+          </p>
         </div>
-      </div>
-    </header>
+
+        {/* Logo arriba a la derecha */}
+        <img
+          src="https://i.postimg.cc/156rTPtc/Toni-Dev-Logo.png"
+          alt="Logo Derecha"
+          className="absolute top-4 right-30 z-40 w-40 h-auto select-none white-shadow"
+          draggable={false}
+        />
+
+        {/* Carousel images */}
+        {images.map((img, index) => (
+          <img
+            key={img}
+            src={img}
+            alt={`Banner ${index + 1}`}
+            loading="lazy"
+            draggable={false}
+            className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              } select-none`}
+          />
+        ))}
+
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-20 pointer-events-none"></div>
+
+        {/* Language toggle button fixed top-right */}
+        <button
+          onClick={toggleLanguage}
+          className="fixed top-6 right-6 z-30 bg-black text-white px-3 py-1 rounded border border-black hover:bg-white hover:text-black transition-colors"
+          aria-label="Toggle Language"
+        >
+          {language === "es" ? "EN" : "ES"}
+        </button>
+      </header>
+
+      {/* Línea blanca en la parte inferior del header */}
+      <div
+        className="font-orbitron bg-white w-full white-shadow line-header"
+
+      ></div>
+    </>
   );
 }
 
