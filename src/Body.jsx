@@ -1,12 +1,13 @@
 import Cards from "./Cards";
 import particles from "./assets/particles.mp4";
 import "./styles/body.css";
+import About from "./About";
 
 function Body() {
   return (
     <div className="body-container">
       <div className="relative min-h-screen w-full overflow-hidden">
-        
+
         <video
           autoPlay
           muted
@@ -19,6 +20,7 @@ function Body() {
         </video>
 
         <div className="relative z-10">
+          <About />
           <Cards />
         </div>
       </div>
